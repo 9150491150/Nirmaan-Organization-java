@@ -1,24 +1,32 @@
-package day9;
+ package day8;
 
 public class Calculator {
-	int add (int a,int b) {
-	return a+b;
+	int Firstnum;
+	int Secondnum;
+	void add() {
+		System.out.println("Add:"+(Firstnum+Secondnum));
 	}
-	int sub(int a,int b) {
-		return(a-b);
-		
+	void sub() {
+		System.out.println("sub:"+(Firstnum-Secondnum));
 	}
-	int mul(int a,int b) {
-		return(a*b);
-		
+	void mul() {
+		System.out.println("mul:"+(Firstnum*Secondnum));
 	}
-	int div(int a,int b) {
-		return(a/b);
-		
+	void div() {
+		System.out.println("div:"+(Firstnum/Secondnum));
 	}
-	int mod(int a,int b) {
-		return(a%b);
-		
+	void mod() {
+		System.out.println("mod:"+(Firstnum%Secondnum));
+	}
+	public static void main(String[]args) {
+		Calculator calci=new Calculator();
+		calci.Firstnum=10;
+		calci.Secondnum=20;
+		calci.add();
+		calci.sub();
+		calci.mul();
+		calci.div();
+		calci.mod();
 	}
 	
 
